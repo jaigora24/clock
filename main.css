@@ -3,10 +3,6 @@
     padding: 0;
 }
 
-body {
-    background-color: #f1f1f1;
-}
-
 .clock {
     position: absolute;
     top: 50%;
@@ -15,10 +11,12 @@ body {
 }
 
 .clock__face {
-    border: solid 5px #fff;
+    border: solid 5px #d3d3d3;
     width: 100px;
     height: 100px;
     border-radius: 50%;
+    position: relative;
+    top: 1px;
 }
 
 .clock__hand {
@@ -31,4 +29,19 @@ body {
     transform: rotate(90deg);
     transition: 0.05s;
     transition-timing-function: cubic-bezier(0.34, 0.19, 0.76, 1.21);
+}
+
+.clock__hour {
+    width: 35%;
+    right: 50%;
+}
+
+.clock__minutes {
+    width: 45%;
+    right: 50%;
+}
+
+.clock__seconds {
+    height: 1px;
+    background-color: #bd2420;
 }
